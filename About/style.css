@@ -1,0 +1,115 @@
+h1{
+      
+    transform:rotate(-180deg);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+   
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: black;
+    max-width: 100%;
+
+}
+
+/* Flex INIT */
+.flex-abo{
+    display: flex;
+    justify-content: space-between;
+}
+/*  */
+
+
+
+
+.main-container{
+    margin-top: 5%;
+    max-width: 100%;
+    margin-left: 2%;
+    /* margin-ri: 2%; */
+}
+
+
+/* END FLEX LEFT */
+
+/* FLEX RIGHT */
+.right{
+    padding-top:10%;
+    padding-right: 5%;
+}
+.blue{
+    color: rgba(39, 165, 239, 1);
+}
+.underline{
+    text-decoration: underline ;
+    text-decoration-thickness: 8px ;
+}
+.abo-head{
+    padding-left: 50%;
+    padding-top: 50%;
+    padding-bottom: 30%;
+    /* padding-right: 0%; */
+    /* padding-bottom: 50%; */
+    font-size: 80px;
+    writing-mode: vertical-rl;  
+    letter-spacing: 10px;
+    /* padding-bottom: 2%; */
+    /* padding-top: 25%; */
+    position: relative;
+    border-left: solid 5px rgba(255, 255, 255, 1);
+    border-bottom: solid 5px rgba(255, 255, 255, 1);
+    /* background-color: white; */
+
+    
+}
+
+.abo-head:before{
+    /* overflow: hidden; */
+    float: right;
+    /* padding-top: 2%; */
+    content: '';
+    display: block;
+    width: 167.1px;
+    height: 5px;
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: -11%;
+    transform: rotate(-35deg);
+    /* left: 10%; */
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .flex-abo{
+        flex-wrap: wrap-reverse;
+    }
+
+    .abo-head{
+        padding: 5%;
+        /* text-align: center; */
+        writing-mode: horizontal-tb;
+        border: none;
+    }
+    .abo-head:before{
+        display: none;
+    }
+    .question button{
+        width: 100%;
+    }
+    .question p.show{
+        max-width: 100%;
+    }
+  }
+
+
+
+
+/*  */
+
